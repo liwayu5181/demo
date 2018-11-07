@@ -12,7 +12,7 @@ import util.DBConnection;
 
 public class CustDao {
 	public List<CustInfo> findProdInfo(){
-		String sql = "select * from PROD_INFO order by CONVERT(PROD_ID,SIGNED) asc";
+		String sql = "select *  from PROD_INFO order by CONVERT(PROD_ID,SIGNED) asc";
 		Connection conn = DBConnection.getConnection();
 		PreparedStatement pstmt = DBConnection.createPreparedStatement(conn, sql);
 		ResultSet rs = null;
